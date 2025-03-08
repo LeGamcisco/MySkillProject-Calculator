@@ -1,0 +1,110 @@
+/* Reset & General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 320px;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.display {
+    background-color: #000;
+    color: white;
+    height: 120px;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.display > .display-history {
+    opacity: 0.5;
+    font-size: 1.2rem;
+}
+
+.display > .temp-result {
+    font-size: 1rem;
+    opacity: 0.4;
+}
+
+.all_button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.button {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.button:hover {
+    filter: brightness(120%);
+}
+
+.all-clear, .last-entity-clear {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.operation {
+    background-color: #ff9500;
+    color: white;
+}
+
+.equal {
+    background-color: #ff9500;
+    color: white;
+}
+
+.number {
+    background-color: #333;
+    color: white;
+}
+
+.btn-0 {
+    grid-column: 1 / 3;
+    border-radius: 30px;
+    width: 100%;
+    text-align: left;
+    padding-right: 45px;
+}
